@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Hogwarts Society</title>
+</head>
+
+<body>
+    <header></header>
+
+    <nav></nav>
+
+    <main>
+        <div>
+            <ul>
+                <li> <a href="index.html"> index.html </a> </li>
+                <li> <a href="contact_us.html">contact us</a> </li>
+                <li> <a href="current_members.html">current members</a> </li>
+                <li> <a href="event_calendar.html">event calendar</a> </li>
+                <li> <a href="img_gallery.html">img gallery</a> </li>
+            </ul>
+        </div>
+
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Contact Us using the below form.</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" value="" /> <br />
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" value="" /> <br />
+
+                    <label for="status"> Membership Status Member</label><br>
+
+                    <input type="radio" id="Member" name="Status" value="Member">
+                    <label for="Member">Member</label><br>
+                    <input type="radio" id="Non-Member" name="Status" value="Non-Member">
+                    <label for="Non-Member">Non-Member</label><br>
+
+                    <label for="comments">Comment:</label>
+                    <textarea name="comments" cols="45" rows="5"></textarea><br>
+                    
+                    <label for="attach">Attach a file:</label>
+                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" value="Upload File" name="submit">
+                    </form>
+                      
+
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+
+    <aside></aside>
+
+    <footer></footer>
+</body>
+
+</html>
