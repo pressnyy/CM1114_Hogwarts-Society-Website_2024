@@ -3,8 +3,6 @@
       src: url('Hogwarts-Font.ttf') format('ttf');
     }
 
-
-
 body {
     background-color:#d1a03a ;
 }
@@ -17,7 +15,7 @@ header {
 
 h1, h2, h3, h4, h5, h6, p {
     font-family: serif;
-    color: #553817;
+    color: #3b2711;
 }
 
 h1 {
@@ -27,4 +25,67 @@ h1 {
 h3 {
     font-size: xx-large;
 }
+
+p {
+    font-size: large;
+}
+
+main {
+    background-color: #e5ba40;
+    border-radius: 10px;
+}
+
+aside {
+    background-color: #e5ba40;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #C67C29;
+    border-radius: 10px;
+}
+
+li {
+    border: 2px solid black;
+    background-color: #C67C29;
+    list-style-type: none;
+}
+
+a:link {
+    color:#F5ECA3;
+    text-align: center; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: #905f28; 
+  }
+  
+li:hover {
+    background-color: #36230e;
+}
+
+table {
+    font-family: serif;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid #000000;
+}
+
+tr:nth-child(even) {
+    background-color: #d1a03a;
+}
+
+tr:hover {
+    background-color: #a76b26;
+}
+
+th {
+    background-color: #C67C29;
+    color: #F5ECA3;
+}
+
 
