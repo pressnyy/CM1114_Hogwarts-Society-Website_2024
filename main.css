@@ -1,0 +1,30 @@
+@font-face{
+    font-family: 'Hogwarts-Font';
+      src: url('Hogwarts-Font.ttf') format('ttf');
+    }
+
+
+
+body {
+    background-color:#d1a03a ;
+}
+
+header {
+    background-color:#C67C29 ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: serif;
+    color: #553817;
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+h3 {
+    font-size: xx-large;
+}
+
