@@ -1,41 +1,68 @@
 <html>
 
 <head>
-    <title>Hogwarts Society</title>
     <link rel="stylesheet" href="main.css" type="text/css">
     <style>
-        .active {
-         background-color: #774915;   
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
-
 </head>
 
 <body>
-    <header></header>
 
-    <h1>Hogwarts Society</h1>
+    <header>
+        <div>
 
-    <nav></nav>
-
-    <main>
-        <div> 
-            <ul>
-                <li class="active"><a href="index.html"> index.html </a> </li>
-                <li class="active"> <a href="contact_us.html">contact us</a> </li>
-                <li class="active"> <a href="current_members.html">current members</a> </li>
-                <li class="active"> <a href="event_calendar.html">event calendar</a> </li>
-                <li class="active"> <a href="img_gallery.html">img gallery</a> </li>
-            </ul>
-    
-            <h3>Welcome to Hogwarts Society!</h3>
-            <p>Hogwarts Society is a society, based on a series of Joan Rowling books.</p>
+            <img src="img/logo4.png" style="height: 50px; width: 50px; float: left; margin-right: 10px;">
+            <h1 style="display: inline; color: black;">Hogwarts Society </h1>
         </div>
-    </main>
-   
-    <aside>
-        <h3>Latest Tweets</h3>
-    </aside>
+    </header>
+
+    <nav>
+        <ul style="font-size: large;">
+            <li><a href="index.html"> Main </a> </li>
+            <li> <a href="contact_us.html">Contact Us</a> </li>
+            <li> <a href="current_members.html">Current Members</a> </li>
+            <li> <a href="event_calendar.html">Event Calendar</a> </li>
+            <li><a href="img_gallery.html">Gallery</a> </li>
+        </ul>
+    </nav>
+
+    <div class="row">
+
+        <div style="float:left; width:70%;">
+            <main>
+                <div>
+                    <h3>Welcome to Hogwarts Society!</h3>
+                    <p>Embark on an extraordinary journey where magic and academia intertwine. Explore the rich legacy
+                        of
+                        Hogwarts School of Witchcraft and Wizardry, delve into captivating courses taught by esteemed
+                        professors, and engage in vibrant discussions within our diverse community. Unleash your talents
+                        in
+                        dueling tournaments and Quidditch matches, forging lifelong friendships along the way. Join us
+                        and
+                        embrace the enchantment of the wizarding world – your adventure begins here.</p>
+                </div>
+            </main>
+        </div>
+
+        <div style="float:inline-end; width:30%;">
+            <aside>
+                <h3>Latest Tweets</h3>
+            </aside>
+        </div>
+
+    </div>
 
     <footer>
         <p>Copyright [Oleksandrd Zuiev]</p>
