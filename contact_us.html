@@ -1,21 +1,23 @@
 <html>
 
+<!--*HEAD-->
 <head>
+    <!--*Main CSS Link-->
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
+<!--*BODY-->
 <body>
+    <!--*HEADER-->
     <header>
         <div>
-        
             <img src="img/logo4.png" style="height: 50px; width: 50px; float: left; margin-right: 10px;">
-            <h1 style="display: inline; color: black;">Hogwarts Society </h1> 
+            <h1 style="display: inline; color: black;">Hogwarts Society </h1>
         </div>
     </header>
 
-    <nav></nav>
-
-    <main>
+    <!--*NAVIGATION BAR-->
+    <nav>
         <div>
             <ul style="font-size: large;">
                 <li><a href="index.html"> Main </a> </li>
@@ -25,7 +27,11 @@
                 <li><a href="img_gallery.html">Gallery</a> </li>
             </ul>
         </div>
+    </nav>
 
+    <!--*MAIN-->
+    <main>
+         <!--*FILL FORM-->
         <div>
             <form>
                 <fieldset>
@@ -45,13 +51,13 @@
 
                     <label for="comments">Comment:</label>
                     <textarea name="comments" cols="45" rows="5"></textarea><br>
-                    
+
                     <label for="attach">Attach a file:</label>
                     <form action="upload.php" method="post" enctype="multipart/form-data">
-                    <input type="file" name="fileToUpload" id="fileToUpload">
-                    <input type="submit" value="Upload File" name="submit">
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        <input type="submit" value="Upload File" name="submit">
                     </form>
-                      
+
 
                 </fieldset>
             </form>
@@ -59,11 +65,14 @@
 
     </main>
 
+    <!--*ASIDE-->
     <aside>
-        <p>Copyright [Oleksandrd Zuiev]</p>
     </aside>
 
-    <footer></footer>
+    <!--*FOOTER-->
+    <footer>
+        <p>Copyright [Oleksandrd Zuiev]</p>
+    </footer>
 </body>
 
 </html>

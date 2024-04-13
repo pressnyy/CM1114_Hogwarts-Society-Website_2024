@@ -14,12 +14,13 @@ header {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
+    
     border-spacing: 16px;
     padding: 5px;
 }
 /** MAIN*/
 main {
-    background-color: #C67C29;
+    background-color: #D1A03A;
     border-radius: 10px;
     padding: 10px;
 }
