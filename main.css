@@ -15,7 +15,7 @@ header {
     border-top-right-radius: 10px;
 
     border-spacing: 16px;
-    padding: 5px;
+    padding: 10px;
 }
 /** MAIN*/
 main {
@@ -33,7 +33,7 @@ aside {
 footer {
     background-color: #704A1F;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
 }
 /********************************************************/
 
@@ -59,27 +59,25 @@ p {
 
 
 /********************************************************/
-/**NAVIGATION SECTION*/
+/**NAVIGATION BAR SECTION*/
 ul{
     margin: 0%;
     padding: 0%;
     overflow: hidden;
 }
 li {
-    border: 2px solid #F5ECA3;
+    border: 2px solid #E5BA40;
     background-color: #704A1F;
-    text-decoration: none;
-
+    list-style-type: none;
     float: left;
-    text-align: center;
     width: 15%;
-    height: 70px;
     padding: 16px;
 }
 a:link {
-    color:#C67C29;
-    text-align: center; 
-    text-decoration: none;
+    font-size: large;
+    text-align: center;
+    color:white;
+    text-decoration:none;
 }
   
 li:hover {
