@@ -22,12 +22,14 @@ main {
     background-color: #C67C29;
     border-radius: 10px;
     padding: 10px;
+    border: 1px solid black;
 }
 /** ASIDE*/
 aside {
     background-color: #C67C29;
     border-radius: 10px;
     padding: 10px;
+
 }
 /** FOOTER*/
 footer {
@@ -72,12 +74,22 @@ li {
     float: left;
     width: 15%;
     padding: 16px;
+    border-radius: 10px;
 }
-a:link {
-    font-size: large;
+a{
+    font-size: medium;
+    font-family: serif;
     text-align: center;
     color:white;
     text-decoration:none;
+}
+
+a:hover {
+    color: #C67C29;
+}
+
+a:active {
+    color: #F5ECA3;
 }
   
 li:hover {
@@ -108,3 +120,7 @@ th {
     color: #F5ECA3;
 }
 /********************************************************/
+
+.active{
+    background-color: #F5ECA3;  
+    }
