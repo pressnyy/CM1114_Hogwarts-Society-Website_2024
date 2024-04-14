@@ -1,67 +1,24 @@
-/********************************************************/
-/** BODY*/
+/*!BODY*/
 body {
     background-color:#E5BA40;
 }
-/********************************************************/
 
+/*******************************************************************************/
+/*!BODY ELEMENTS */
 
-/** BODY ELEMENTS */
-/********************************************************/
-/** HEADER */
+/**HEADER*/
 header {
     background-color:#C67C29 ;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
-    border-spacing: 16px;
     padding: 10px;
 }
-/** MAIN*/
-main {
-    background-color: #C67C29;
-    border-radius: 10px;
-    padding: 10px;
-    border: 1px solid black;
-}
-/** ASIDE*/
-aside {
-    background-color: #C67C29;
-    border-radius: 10px;
-    padding: 10px;
-
-}
-/** FOOTER*/
-footer {
-    background-color: #704A1F;
-    border-radius: 10px;
-    padding: 10px;
-}
-/********************************************************/
+/**HEADER*/
 
 
 
-/********************************************************/
-/**TEXT SECTION*/
-h1, h2, h3, h4, h5, h6, p {
-    font-family: serif;
-    color: #000000;
-}
-h1 {
-    font-size: xxx-large;
-}
-h3 {
-    font-size: xx-large;
-}
-p {
-    font-size: large;
-}
-/********************************************************/
-
-
-
-/********************************************************/
-/**NAVIGATION BAR SECTION*/
+/**NAVIGATION BAR*/
+/***list elements*/
 ul{
     margin: 0%;
     padding: 0%;
@@ -76,6 +33,10 @@ li {
     padding: 16px;
     border-radius: 10px;
 }
+li:hover {
+    background-color: #000000;
+}
+/***link elements*/
 a{
     font-size: medium;
     font-family: serif;
@@ -83,44 +44,103 @@ a{
     color:white;
     text-decoration:none;
 }
-
 a:hover {
     color: #C67C29;
 }
-
 a:active {
     color: #F5ECA3;
 }
+/**NAVIGATION BAR*/
   
-li:hover {
-    background-color: #000000;
+
+
+/**MAIN*/
+main {
+    background-color: #C67C29;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+/**MAIN*/
+
+
+
+/** ASIDE*/
+aside {
+
+    background-color: #C67C29;
+    border-radius: 10px;
+    padding: 16px;
+
+}
+/** ASIDE*/
+
+
+
+/** FOOTER*/
+footer {
+    background-color: #704A1F;
+    border-radius: 10px;
+    padding: 10px;
+}
+/** FOOTER*/
+/*******************************************************************************/
+
+
+
+/********************************************************/
+/*!TEXT SECTION*/
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: serif;
+    color: #000000;
+}
+
+
+h1 {
+    font-size: xxx-large;
+}
+
+
+h3 {
+    font-size: xx-large;
+}
+
+
+p {
+    font-size: large;
 }
 /********************************************************/
 
 
 
 /********************************************************/
-/**TABLE SECTION*/
+/*!TABLE SECTION*/
+
 table {
     font-family: serif;
     border-collapse: collapse;
     text-align: center;
 }
+
+
 td, th {
     border: 1px solid #000000;
 }
+
+
 tr:nth-child(even) {
     background-color: #d1a03a;
 }
+
+
 tr:hover {
     background-color: #a76b26;
 }
+
+
 th {
     background-color: #C67C29;
     color: #F5ECA3;
 }
 /********************************************************/
-
-.active{
-    background-color: #F5ECA3;  
-    }
