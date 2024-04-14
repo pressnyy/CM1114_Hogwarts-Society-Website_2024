@@ -7,50 +7,40 @@
     <!--*Experiment CSS Link-->
     <!--<link rel="stylesheet" href="experiment.css" type="text/css">-->
 
-<!--*STYLE-->
-<style>
-
-<!--* CLASSES-->
-    .active{
-    background-color: #F5ECA3;  
-    }
-
     <!--*ID-->
-    #title {
-    display: inline    
-    }
+    <style>
+        #left-col {
+            margin: 0%;
+            padding: 0%;
+            overflow: hidden;
+            list-style-type: none;
+            float: left;
+            width: 72%
+        }
 
-    #left-col {
-        margin: 0%;
-        padding: 0%;
-        overflow: hidden;
-        list-style-type: none;
-        float: left;
-        width: 72%
-    }
+        #right-col {
+            margin: 0%;
+            overflow: hidden;
+            list-style-type: none;
+            float: right;
+            width: 25%;
 
-    #right-col {
-        margin: 0%;
-        overflow: hidden;
-        list-style-type: none;
-        float: right;
-        width: 25%;
-    
-        background-color: #C67C29;
-        border-radius: 10px;
-        padding: 16px;
-    }
+            background-color: #C67C29;
+            border-radius: 10px;
+            padding: 16px;
+        }
 
-    #footer {
-        margin: 0%;
-        padding: 0%;
-        overflow: hidden;
-        list-style-type: none;
-        float:inline-end;
-        float: left;
-        width: 72%
-    }
-</style>
+        #footer {
+            margin: 0%;
+            padding: 0%;
+            overflow: hidden;
+            list-style-type: none;
+            float: inline-end;
+            float: left;
+            width: 72%
+        }
+    </style>
+
 </head>
 
 <!--**BODY-->
@@ -59,20 +49,20 @@
     <!--*HEADER-->
     <header>
         <div>
-            <img src="img/logo4.png" alt="logo" style="height: 50px; width: 50px; float: left; margin-right: 10px;">
-            <h1 id="title">Hogwarts Society </h1>
+            <img class="logo" src="img/logo4.png" alt="logo" >
+            <h1 class="title">Hogwarts Society </h1>
         </div>
     </header>
 
     <!--*NAVIGATION BAR-->
     <nav>
-        <div>
+        <div class="active">
             <ul>
-                <li class=”active”><a href="index.html"> Main </a> </li>
-                <li class=”active”> <a href="contact_us.html">Contact Us</a> </li>
-                <li class=”active”> <a href="current_members.html">Current Members</a> </li>
-                <li class=”active”> <a href="event_calendar.html">Event Calendar</a> </li>
-                <li class=”active”><a href="img_gallery.html">Gallery</a> </li>
+                <li><a href="index.html"> Main </a> </li>
+                <li> <a href="contact_us.html">Contact Us</a> </li>
+                <li> <a href="current_members.html">Current Members</a> </li>
+                <li> <a href="event_calendar.html">Event Calendar</a> </li>
+                <li><a href="img_gallery.html">Gallery</a> </li>
             </ul>
         </div>
     </nav>

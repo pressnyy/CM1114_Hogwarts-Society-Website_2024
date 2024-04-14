@@ -17,49 +17,11 @@ header {
 
 
 
-/**NAVIGATION BAR*/
-/***list elements*/
-ul{
-    margin: 0%;
-    padding: 0%;
-    overflow: hidden;
-}
-li {
-    border: 2px solid #E5BA40;
-    background-color: #704A1F;
-    list-style-type: none;
-    float: left;
-    width: 15%;
-    padding: 16px;
-    border-radius: 10px;
-}
-li:hover {
-    background-color: #000000;
-}
-/***link elements*/
-a{
-    font-size: medium;
-    font-family: serif;
-    text-align: center;
-    color:white;
-    text-decoration:none;
-}
-a:hover {
-    color: #C67C29;
-}
-a:active {
-    color: #F5ECA3;
-}
-/**NAVIGATION BAR*/
-  
-
-
 /**MAIN*/
 main {
     background-color: #C67C29;
     border-radius: 10px;
     padding: 10px;
-    border: 1px solid black;
 }
 /**MAIN*/
 
@@ -67,11 +29,9 @@ main {
 
 /** ASIDE*/
 aside {
-
     background-color: #C67C29;
     border-radius: 10px;
     padding: 16px;
-
 }
 /** ASIDE*/
 
@@ -144,3 +104,53 @@ th {
     color: #F5ECA3;
 }
 /********************************************************/
+
+/*!CLASSES*/
+
+/**HEADER*/
+.title{
+    display: inline   
+}
+
+.logo{
+    height: 50px; 
+    width: 50px; 
+    float: left; 
+    margin-right: 10px;
+}
+
+
+/** NAVIGATION BAR*/
+.active{
+    ul{
+        margin: 0%;
+        padding: 0%;
+        overflow: hidden;
+    }
+    li {
+        border: 2px solid #E5BA40;
+        background-color: #704A1F;
+        list-style-type: none;
+        float: left;
+        width: 15%;
+        padding: 16px;
+        border-radius: 10px;
+    }
+    li:hover {
+        background-color: #000000;
+    }
+    /***link elements*/
+    a{
+        font-size: medium;
+        font-family: serif;
+        text-align: center;
+        color:white;
+        text-decoration:none;
+    }
+    a:hover {
+        color: #C67C29;
+    }
+    a:active {
+        color: #F5ECA3;
+    }  
+}
