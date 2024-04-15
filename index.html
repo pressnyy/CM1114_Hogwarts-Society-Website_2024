@@ -26,6 +26,39 @@
             <img class="logo" src="img/logo4.png" alt="logo">
             <h1 class="title">Hogwarts Society </h1>
         </div>
+        
+        <div>
+
+            <fieldset>
+    
+                <label for="name">Email:</label>
+                <input type="text" name="name" value="" /> 
+        
+                <label for="email">Password:</label>
+                <input type="text" name="email" value="" /> 
+    
+                <button type="button" onclick='login()'>Login</button>
+                
+                <script>
+                    var counter = 2;
+    
+                    function login(){
+                        if(counter % 2 == 0){
+                            alert('You have been logged in!');
+                        }
+    
+                        else {
+                        alert('You have been logged out!');
+                        }
+                        counter += 1;
+                    }
+    
+                </script>
+    
+            </fieldset>
+    
+            </div>
+            
     </header>
 
     <!--*NAVIGATION BAR-->

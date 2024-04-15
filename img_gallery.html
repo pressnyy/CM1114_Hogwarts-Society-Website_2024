@@ -52,43 +52,154 @@
     
                 <div class="row">
                     <div class="col-sm">
-                        <img src="img/gallery1.jpg" class="gallery-img" />
+                        <img id="image1" src="img/gallery1.jpg" class="gallery-img" />
                     </div>
                     <div class="col-sm">
-                        <img src="img/gallery4.jpg" class="gallery-img" />
+                        <img id="image2" src="img/gallery4.jpg" class="gallery-img" />
                     </div>
                     <div class="col-sm">
-                        <img src="img/gallery7.jpg" class="gallery-img" />
+                        <img id="image3" src="img/gallery7.jpg" class="gallery-img" />
                     </div>
                 </div>
     
                 <!--*Row 2-->
                 <div class="row">
                     <div class="col-sm">
-                        <img src="img/gallery5.jpg" class="gallery-img" />
+                        <img id="image4" src="img/gallery5.jpg" class="gallery-img" />
                     </div>
                     <div class="col-sm">
-                        <img src="img/gallery8.jpg" class="gallery-img" />
+                        <img id="image5" src="img/gallery8.jpg" class="gallery-img" />
                     </div>
                     <div class="col-sm">
-                        <img src="img/gallery2.jpg" class="gallery-img" />
+                        <img id="image6" src="img/gallery2.jpg" class="gallery-img" />
                     </div>
                 </div>
     
                 <!--*Row 3-->
                 <div class="row">
                     <div class="col-sm">
-                        <img src="img/gallery9.jpg" class="gallery-img" />
+                        <img id="image7" src="img/gallery9.jpg" class="gallery-img" />
                     </div>
                     <div class="col-sm">
-                        <img src="img/gallery3.jpg" class="gallery-img" />
+                        <img id="image8" src="img/gallery3.jpg" class="gallery-img" />
                     </div>
                     <div class="col-sm">
-                        <img src="img/gallery6.jpg" class="gallery-img" />
+                        <img id="image9" src="img/gallery6.jpg" class="gallery-img" />
                     </div>
                 </div>
     
             </div>
+
+            <!--*Script-->
+            <script>
+                <!--*I was strugling to make my own function, so I had to inherit scrip for each image-->
+                document.getElementById("image1").addEventListener("mouseover", highlight1);
+                document.getElementById("image1").addEventListener("mouseout", delight1);
+                    
+                function highlight1() {
+                        document.getElementById("image1").style = "border: solid #F5ECA3 4px; background-color: #F5ECA3"
+                    }
+                function delight1() {
+                        document.getElementById("image1").style = "border: none;"
+                    }
+
+   
+                    
+                document.getElementById("image2").addEventListener("mouseover", highlight2);
+                document.getElementById("image2").addEventListener("mouseout", delight2);
+                    
+                function highlight2() {
+                        document.getElementById("image2").style = "border: solid #F5ECA3 4px; background-color: #F5ECA3"
+                    }
+                function delight2() {
+                        document.getElementById("image2").style = "border: none;"
+                    }
+
+
+
+                document.getElementById("image3").addEventListener("mouseover", highlight3);
+                document.getElementById("image3").addEventListener("mouseout", delight3);
+                    
+                function highlight3() {
+                        document.getElementById("image3").style = "border: solid #F5ECA3 4px; background-color: #F5ECA3"
+                    }
+                function delight3() {
+                        document.getElementById("image3").style = "border: none;"
+                    }
+
+
+
+                document.getElementById("image4").addEventListener("mouseover", highlight4);
+                document.getElementById("image4").addEventListener("mouseout", delight4);
+                    
+                function highlight4() {
+                        document.getElementById("image4").style = "border: solid #F5ECA3 4px; background-color: #F5ECA3"
+                    }
+                function delight4() {
+                        document.getElementById("image4").style = "border: none;"
+                    }
+
+
+
+                document.getElementById("image5").addEventListener("mouseover", highlight5);
+                document.getElementById("image5").addEventListener("mouseout", delight5);
+                    
+                function highlight5() {
+                        document.getElementById("image5").style = "border: solid #F5ECA3 4px; background-color: #F5ECA3"
+                    }
+                function delight5() {
+                        document.getElementById("image5").style = "border: none;"
+                    }
+
+
+
+                document.getElementById("image6").addEventListener("mouseover", highlight6);
+                document.getElementById("image6").addEventListener("mouseout", delight6);
+                    
+                function highlight6() {
+                        document.getElementById("image6").style = "border: solid #F5ECA3 4px; background-color: #F5ECA3"
+                    }
+                function delight6() {
+                        document.getElementById("image6").style = "border: none;"
+                    }
+
+
+
+                document.getElementById("image7").addEventListener("mouseover", highlight7);
+                document.getElementById("image7").addEventListener("mouseout", delight7);
+                    
+                function highlight7() {
+                        document.getElementById("image7").style = "border: solid #F5ECA3 4px; background-color: #F5ECA3"
+                    }
+                function delight7() {
+                        document.getElementById("image7").style = "border: none;"
+                    }
+
+
+
+                document.getElementById("image8").addEventListener("mouseover", highlight8);
+                document.getElementById("image8").addEventListener("mouseout", delight8);
+                    
+                function highlight8() {
+                        document.getElementById("image8").style = "border: solid #F5ECA3 4px; background-color: #F5ECA3"
+                    }
+                function delight8() {
+                        document.getElementById("image8").style = "border: none;"
+                    }
+
+
+
+                document.getElementById("image9").addEventListener("mouseover", highlight9);
+                document.getElementById("image9").addEventListener("mouseout", delight9);
+                    
+                function highlight9() {
+                        document.getElementById("image9").style = "border: solid #F5ECA3 4px; background-color: #F5ECA3"
+                    }
+                function delight9() {
+                        document.getElementById("image9").style = "border: none;"
+                    }
+                    
+            </script>
     
         </div>
     

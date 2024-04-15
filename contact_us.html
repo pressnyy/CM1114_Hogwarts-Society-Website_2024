@@ -23,7 +23,7 @@
             overflow: hidden;
             list-style-type: none;
             float: left;
-            width: 72%
+            width: 72%;
         }
 
         #right-col {
@@ -47,6 +47,7 @@
             float: left;
             width: 72%
         }
+
     </style>
 
 </head>
@@ -60,6 +61,7 @@
             <img class="logo" src="img/logo4.png" alt="logo" >
             <h1 class="title">Hogwarts Society </h1>
         </div>
+        
     </header>
 
     <!--*NAVIGATION BAR-->
@@ -75,7 +77,6 @@
         </div>
     </nav>
 
-    
     <!--*LEFT COLUMN-->
     <div id="left-col">
 
@@ -106,19 +107,26 @@
     
                     <label for="attach">Attach a file:</label>
                     <form action="upload.php" method="post" enctype="multipart/form-data">
-                        <input type="file" name="fileToUpload" id="fileToUpload">
-                        <button type="button"
-onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button>
-                    </form>
-    
+                    <input type="file" name="fileToUpload" id="fileToUpload"> <br>
+
+                    <!--*Submit Button-->
+                    <button type="button" onclick='send_form()' style="float: left;">Submit</button>
+
+                    <div>
+                        <p id="form_outcome"></p>
+                    </div>
+
+                    <script>
+                        function send_form(id, content) {
+                            var container = document.getElementById("form_outcome");
+                            container.innerHTML = "Form has been sent successfully!"; 
+                        }
+                    </script>
+
                 </fieldset>
 
             </form>
 
-            <div>
-                <p id="form_outcome">Form has been sent successfully!</p>
-            </div>
-    
         </main>
 
     </div>
@@ -130,7 +138,7 @@ onclick='document.getElementById("form_outcome").innerHTML="Form has been sent s
         <aside>
     
             <h3>Latest Tweets</h3>
-            <a class="twitter-timeline" data-width="380" data-height="230" data-theme="dark"
+            <a class="twitter-timeline" data-width="380" data-height="270" data-theme="dark"
                 href="https://twitter.com/HogwartsSocRGU?ref_src=twsrc%5Etfw">Tweets by HogwartsSocRGU</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     
