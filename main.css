@@ -11,9 +11,60 @@ header {
     background-color:#C67C29 ;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 10px;
+}
+
+
+.title{
+    display: inline   
+}
+
+
+.logo{
+    height: 50px; 
+    width: 50px; 
+    float: left; 
+    margin-right: 10px;
 }
 /**HEADER*/
+
+
+
+
+/** NAVIGATION BAR*/
+.active{
+    ul{
+        margin: 0%;
+        padding: 0%;
+        overflow: hidden;
+    }
+    li {
+        border: 2px solid #E5BA40;
+        background-color: #704A1F;
+        list-style-type: none;
+        float: left;
+        width: 15%;
+        padding: 16px;
+        border-radius: 10px;
+    }
+    li:hover {
+        background-color: #000000;
+    }
+    /***link elements*/
+    a{
+        font-size:large;
+        font-family: serif;
+        text-align: center;
+        color:white;
+        text-decoration:none;
+    }
+    a:hover {
+        color: #C67C29;
+    }
+    a:active {
+        color: #F5ECA3;
+    }  
+}
+/** NAVIGATION BAR*/
 
 
 
@@ -21,7 +72,6 @@ header {
 main {
     background-color: #C67C29;
     border-radius: 10px;
-    padding: 10px;
 }
 /**MAIN*/
 
@@ -31,7 +81,6 @@ main {
 aside {
     background-color: #C67C29;
     border-radius: 10px;
-    padding: 16px;
 }
 /** ASIDE*/
 
@@ -41,36 +90,9 @@ aside {
 footer {
     background-color: #704A1F;
     border-radius: 10px;
-    padding: 10px;
 }
 /** FOOTER*/
 /*******************************************************************************/
-
-
-
-/********************************************************/
-/*!TEXT SECTION*/
-
-h1, h2, h3, h4, h5, h6, p {
-    font-family: serif;
-    color: #000000;
-}
-
-
-h1 {
-    font-size: xxx-large;
-}
-
-
-h3 {
-    font-size: xx-large;
-}
-
-
-p {
-    font-size: large;
-}
-/********************************************************/
 
 
 
@@ -81,6 +103,7 @@ table {
     font-family: serif;
     border-collapse: collapse;
     text-align: center;
+    width: 100%;
 }
 
 
@@ -105,52 +128,46 @@ th {
 }
 /********************************************************/
 
-/*!CLASSES*/
+/*!OTHER*/
 
-/**HEADER*/
-.title{
-    display: inline   
-}
+/** PADDING AND TEXT FIXING*/
+.bootstrapFix {
 
-.logo{
-    height: 50px; 
-    width: 50px; 
-    float: left; 
-    margin-right: 10px;
-}
-
-
-/** NAVIGATION BAR*/
-.active{
-    ul{
-        margin: 0%;
-        padding: 0%;
-        overflow: hidden;
+    /** Padding*/
+    header,main,aside,footer {
+        padding: 10px;
     }
-    li {
-        border: 2px solid #E5BA40;
-        background-color: #704A1F;
-        list-style-type: none;
-        float: left;
-        width: 15%;
-        padding: 16px;
-        border-radius: 10px;
-    }
-    li:hover {
-        background-color: #000000;
-    }
-    /***link elements*/
-    a{
-        font-size: medium;
+       
+    /** Text*/
+    h1,h2,h3,h4,h5,h6,p {
         font-family: serif;
-        text-align: center;
-        color:white;
-        text-decoration:none;
+        color: #000000;
     }
-    a:hover {
-        color: #C67C29;
+
+    h1 {
+        font-size: xxx-large;
     }
-    a:active {
-        color: #F5ECA3;
-    }  
+
+    h3 {
+        font-size: xx-large;
+    }
+
+    p {
+        font-size: large;
+    }
+  }  
+
+/** CONSTRAINING THE IMAGES FROM CAROUSEL*/
+.imgConstrain {
+    height: auto; 
+    width: 70%;    
 }
+
+/** IMAGE GALLERY GRID*/
+.gallery-img {
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+
