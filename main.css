@@ -89,6 +89,44 @@ main {
     float: left; 
 }
 
+/** CUSTOM THE BUTTON FOR SPOTIFY LINK*/
+.button{
+    ul{
+        margin-right: 5%;
+        padding: 0%;
+        overflow: hidden;
+    }
+    li {
+        background-color: #704A1F;
+        list-style-type: none;
+        float: right;
+        width: 480px;
+        height: 35px;
+        padding: 0px;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    li:hover {
+        background-color: #E5BA40;
+    }
+    /***link elements*/
+    a{
+        font-size:medium;
+        font-family: serif;
+        text-align: center;
+        color:white;
+        text-decoration:none;
+    }
+    a:hover {
+        color: black;
+    }
+    a:active {
+        color: #F5ECA3;
+    }  
+}
+
 
 /**MAIN*/
 
