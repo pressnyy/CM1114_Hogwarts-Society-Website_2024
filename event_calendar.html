@@ -232,6 +232,51 @@
                 </tr>
 
             </table>
+
+
+            
+            <!--*Forum-->
+
+            <form id="event" name="event">
+                <h5>Want to recommend an event? Tell us below!</h5>
+
+                <fieldset>
+                    <legend>Details:</legend>
+
+                    <label for="event"><u><b>Event</b></u></label><br>
+                    <label for="event_title">Title:</label>
+                    <input type="text" id="event_title" name="event_title" value=""/><br><br>
+        
+                    <label for="event_date">Date:</label>
+                    <input type="date" id="event_date" name="event_date" value=""> 
+            
+                    <label for="description">Describe:</label>
+                    <textarea id="description" name="description" cols="40" rows="1"></textarea><br>
+
+                    <button onclick="submit_event()">Submit</button>
+                </fieldset>
+            </form>
+                     
+                    <!--*Script for Button-->
+                    <script>
+
+                        function submit_event() {
+                            var title = document.forms["event"]["event_title"].value;
+                            var date = document.forms["event"]["event_date"].value;
+                            if (title == "") {
+                                alert("An event must have a title!");
+                            }
+                            else {
+                                if (date.length == 0) {
+                                    alert("An event must have a date!");
+                                }
+                                else {
+                                    alert("Event submitted! The society will contact you soon!");
+                                }
+                            }
+                        }
+                    </script>
+           
         </div>
     </main>
 

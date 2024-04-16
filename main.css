@@ -163,11 +163,15 @@ table {
 
 td, th {
     border: 1px solid #000000;
+    height: 50px;
+
 }
 
 
 tr:nth-child(even) {
     background-color: #d1a03a;
+    height: 50px;
+
 }
 
 
@@ -212,7 +216,7 @@ th {
   }  
 
 
-  
+
 /** IMAGE GALLERY GRID*/
 .gallery-img {
     width: 100%;
