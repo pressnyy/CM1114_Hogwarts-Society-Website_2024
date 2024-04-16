@@ -42,7 +42,7 @@ header {
         background-color: #704A1F;
         list-style-type: none;
         float: left;
-        width: 15%;
+        width: 14.28%;
         padding: 16px;
         border-radius: 10px;
     }
@@ -73,6 +73,23 @@ main {
     background-color: #C67C29;
     border-radius: 10px;
 }
+
+/** CONSTRAINING THE IMAGES FROM CAROUSEL MAIN PAGE*/
+.imgConstrain {
+    height: auto; 
+    width: 70%;    
+}
+
+/** HOUSES PAGE*/
+
+/** CONSTRAINING THE IMAGES FROM HOUSES PAGE*/
+.imgLogo {
+    width: 400px;
+    height:400px;
+    float: left; 
+}
+
+
 /**MAIN*/
 
 
@@ -157,11 +174,7 @@ th {
     }
   }  
 
-/** CONSTRAINING THE IMAGES FROM CAROUSEL*/
-.imgConstrain {
-    height: auto; 
-    width: 70%;    
-}
+
 
 /** IMAGE GALLERY GRID*/
 .gallery-img {
