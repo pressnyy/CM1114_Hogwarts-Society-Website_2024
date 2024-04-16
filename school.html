@@ -1,8 +1,11 @@
-<html>
+<!DOCTYPE html>
+<title>Hogwarts Houses</title>
 
 <!--**HEAD-->
 
 <head>
+    <meta charset="UTF-8">
+
     <!--*Bootstrap Links-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -20,7 +23,6 @@
 <!--**BODY-->
 
 <body class="bootstrapFix">
-
 
     <!--*HEADER-->
     <header>
@@ -49,6 +51,7 @@
     <!--*MAIN-->
     <main>
     
+        <!--*Houses Information-->
         <div class="container text-center">
             <div class="row row-cols-2">
     
@@ -71,8 +74,6 @@
                         style="height: 140px; width: 150px; margin-left: 20px;">
                     <p style="text-align:center; font-size: medium;">Artifact: Sword of Gryffindor</p>
                 </div>
-    
-    
     
                 <!--*Hufflepuff Section-->
                 <div class="col">
@@ -106,7 +107,7 @@
                     </p>
                     <!--*Artifact-->
     
-                    <img  id="Diaem" src="img/Ravenclaw's Diadem.jpg" alt="Ravenclaw's Diadem"
+                    <img id="Diaem" src="img/Ravenclaw's Diadem.jpg" alt="Ravenclaw's Diadem"
                         style="height: 140px; width: 150px; margin-left: 20px;">
                     <p style="text-align:center; font-size: medium;">Artifact: Ravenclaw's Diadem</p>
     
@@ -125,91 +126,86 @@
     
                     <!--*Artifact-->
     
-                    <img  id="Locket" src="img/Slytherin Locket.jpg" alt="Slytherin Locket"
+                    <img id="Locket" src="img/Slytherin Locket.jpg" alt="Slytherin Locket"
                         style="height: 140px; width: 150px; margin-left: 20px;">
                     <p style="text-align:center; font-size: medium;">Artifact: Slytherin Locket</p>
     
-                    
-                
+    
+    
+                </div>
+    
             </div>
+    
+            <!--*YOU TUBE VIDEO LINKS-->
+    
+            <div style="margin-top: 15px; float: left;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T1G4wzRO_tc?si=qmf34QbCazsqJfb-"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+            </div>
+    
+            <div style="margin-top: 15px; float: right;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Mk2JFWZ3Q5E?si=SKJE_amC49zdd8qd"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+            </div>
+    
+            <!--*Script for interaction with artifacts images-->
+            <script>
+
+                /** Gryffindor SCRIPT*/
+                document.getElementById("Sword").addEventListener("mouseover", highlightSword);
+                document.getElementById("Sword").addEventListener("mouseout", delightSword);
+
+                function highlightSword() {
+                    document.getElementById("Sword").style = "height: 140px; width: 150px; margin-left: 20px; border: solid red 4px; background-color: red"
+                }
+                function delightSword() {
+                    document.getElementById("Sword").style = "height: 140px; width: 150px; margin-left: 20px; border: none;"
+                }
 
 
-            
-        </div>
-    
-    
-        <!--*YOU TUBE VIDEO LINKS-->
-    
-        <div style="margin-top: 15px; float: left;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/T1G4wzRO_tc?si=qmf34QbCazsqJfb-"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
-        </div>
-    
-        <div style="margin-top: 15px; float: right;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Mk2JFWZ3Q5E?si=SKJE_amC49zdd8qd"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-        </div>
-    
-                  <!--*Script-->
-                  <script>
-    
-                    /** Gryffindor SCRIPT*/
-                    document.getElementById("Sword").addEventListener("mouseover", highlightSword);
-                    document.getElementById("Sword").addEventListener("mouseout", delightSword);
-                
-                    function highlightSword() {
-                        document.getElementById("Sword").style = "height: 140px; width: 150px; margin-left: 20px; border: solid red 4px; background-color: red"
-                    }
-                    function delightSword() {
-                        document.getElementById("Sword").style = "height: 140px; width: 150px; margin-left: 20px; border: none;"
-                    }
-                
-                
-                    /** Hufflepuff SCRIPT*/        
-                    document.getElementById("Cup").addEventListener("mouseover", highlightCup);
-                    document.getElementById("Cup").addEventListener("mouseout", delightCup);
-                
-                    function highlightCup() {
-                        document.getElementById("Cup").style = "height: 140px; width: 150px; margin-left: 20px; border: solid yellow 4px; background-color: yellow"
-                    }
-                    function delightCup() {
-                        document.getElementById("Cup").style = "height: 140px; width: 150px; margin-left: 20px; border: none;"
-                    }
-                
-                
-                    /** Ravenclaw SCRIPT*/        
-                    document.getElementById("Diaem").addEventListener("mouseover", highlightDiaem);
-                    document.getElementById("Diaem").addEventListener("mouseout", delightDiaem);
-                
-                    function highlightDiaem() {
-                        document.getElementById("Diaem").style = "height: 140px; width: 150px; margin-left: 20px; border: solid blue 4px; background-color: blue"
-                    }
-                    function delightDiaem() {
-                        document.getElementById("Diaem").style = "height: 140px; width: 150px; margin-left: 20px; border: none;"
-                    }
-                
-                
-                    /** Slytherin SCRIPT*/        
-                    document.getElementById("Locket").addEventListener("mouseover", highlightLocket);
-                    document.getElementById("Locket").addEventListener("mouseout", delightLocket);
-                
-                    function highlightLocket() {
-                        document.getElementById("Locket").style = "height: 140px; width: 150px; margin-left: 20px; border: solid green 4px; background-color: green"
-                    }
-                    function delightLocket() {
-                        document.getElementById("Locket").style = "height: 140px; width: 150px; margin-left: 20px; border: none;"
-                    }
-                
-                </script> 
+                /** Hufflepuff SCRIPT*/
+                document.getElementById("Cup").addEventListener("mouseover", highlightCup);
+                document.getElementById("Cup").addEventListener("mouseout", delightCup);
+
+                function highlightCup() {
+                    document.getElementById("Cup").style = "height: 140px; width: 150px; margin-left: 20px; border: solid yellow 4px; background-color: yellow"
+                }
+                function delightCup() {
+                    document.getElementById("Cup").style = "height: 140px; width: 150px; margin-left: 20px; border: none;"
+                }
+
+
+                /** Ravenclaw SCRIPT*/
+                document.getElementById("Diaem").addEventListener("mouseover", highlightDiaem);
+                document.getElementById("Diaem").addEventListener("mouseout", delightDiaem);
+
+                function highlightDiaem() {
+                    document.getElementById("Diaem").style = "height: 140px; width: 150px; margin-left: 20px; border: solid blue 4px; background-color: blue"
+                }
+                function delightDiaem() {
+                    document.getElementById("Diaem").style = "height: 140px; width: 150px; margin-left: 20px; border: none;"
+                }
+
+
+                /** Slytherin SCRIPT*/
+                document.getElementById("Locket").addEventListener("mouseover", highlightLocket);
+                document.getElementById("Locket").addEventListener("mouseout", delightLocket);
+
+                function highlightLocket() {
+                    document.getElementById("Locket").style = "height: 140px; width: 150px; margin-left: 20px; border: solid green 4px; background-color: green"
+                }
+                function delightLocket() {
+                    document.getElementById("Locket").style = "height: 140px; width: 150px; margin-left: 20px; border: none;"
+                }
+
+            </script>
     
     </main>
-
-
 
 </body>
 
